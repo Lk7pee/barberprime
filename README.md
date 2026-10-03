@@ -14,6 +14,30 @@ Depois acesse:
 - Site publico: `http://localhost:3000`
 - Painel administrativo: `http://localhost:3000/admin`
 
+## Publicacao no GitHub Pages
+
+O projeto esta configurado para publicar automaticamente no GitHub Pages pelo
+workflow `.github/workflows/pages.yml`.
+
+Para publicar:
+
+```bash
+git add .
+git commit -m "Configura deploy no GitHub Pages"
+git push origin main
+```
+
+Depois, no GitHub, confirme em **Settings > Pages** que a origem esta como
+**GitHub Actions**. Apos o workflow terminar, o site ficara disponivel em:
+
+`https://lk7pee.github.io/barberprime/`
+
+Para testar localmente a exportacao estatica usada no Pages:
+
+```bash
+npm run build:pages
+```
+
 ## Tecnologias
 
 - Next.js

@@ -40,6 +40,7 @@ import {
   AppointmentPreset,
   AppointmentWizard,
 } from "@/components/site/appointment-wizard";
+import { sitePath } from "@/lib/site-path";
 import type { GalleryImage } from "@/types/barber";
 
 const navItems = [
@@ -101,7 +102,7 @@ export function BarberPrimeSite() {
         </nav>
 
         <div className="topbar-actions">
-          <a className="admin-link" href="/admin">
+          <a className="admin-link" href={sitePath("/admin")}>
             Painel admin
           </a>
           <a className="primary-button compact" href="#agendamento">
@@ -123,7 +124,7 @@ export function BarberPrimeSite() {
                   </SheetClose>
                 ))}
                 <SheetClose asChild>
-                  <a href="/admin">Painel admin</a>
+                  <a href={sitePath("/admin")}>Painel admin</a>
                 </SheetClose>
               </nav>
             </SheetContent>
@@ -351,7 +352,7 @@ export function BarberPrimeSite() {
           <a href="#servicos">Servicos</a>
           <a href="#agendamento">Agendamento</a>
           <a href="#contato">Contato</a>
-          <a href="/admin">Painel administrativo</a>
+          <a href={sitePath("/admin")}>Painel administrativo</a>
         </nav>
       </footer>
 

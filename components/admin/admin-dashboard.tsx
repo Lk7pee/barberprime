@@ -28,6 +28,7 @@ import {
   timeSlots,
 } from "@/config/barber-prime";
 import { useAppointments } from "@/hooks/use-appointments";
+import { sitePath } from "@/lib/site-path";
 import type {
   Appointment,
   AppointmentStatus,
@@ -442,7 +443,7 @@ export function AdminDashboard() {
               <button className="secondary-button" type="button" onClick={resetDemoData}>
                 Restaurar agendamentos demo
               </button>
-              <a className="primary-button compact" href="/">
+              <a className="primary-button compact" href={sitePath("/")}>
                 Ver site publico
               </a>
             </div>
