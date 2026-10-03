@@ -174,3 +174,4 @@ types/
 ## Revisao antes de apresentar
 
 Verifique o site publico, o fluxo completo de agendamento, a rota `/admin`, os botoes de acao, a responsividade em celular e desktop e o comportamento de conflito quando um horario ja esta ocupado.
+# barberprime
